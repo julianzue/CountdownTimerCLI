@@ -110,7 +110,7 @@ class Fahrt():
         else:
             color = Fore.LIGHTWHITE_EX
 
-        if int(getTime.split(":")[0]) <= 0 and int(getTime.split(":")[1]) <= 0:
+        if int(getTime.split(":")[0]) <= 0 and int(getTime.split(":")[1]) < 0:
             print(color + "[!] Time is up" + R)
             self.progress()
             quit()
