@@ -54,14 +54,14 @@ class Fahrt():
             if self.start == "":
                 self.start = get_time[0]
             else:
-                update = input(y + "[*] " + R + "Update Start Time? (" + self.start + ") [y|n]: ")
+                update = input(y + "[*] " + R + "Update saved start time? (" + self.start + ") [y|n]: ")
                 if update == "y":
                     self.updateStartTime(self.start)
 
             if self.end == "":
                 self.end = get_time[1]
             else:
-                update = input(y + "[*] " + R + "Update End Time? (" + self.end + ") [y|n]: ")
+                update = input(y + "[*] " + R + "Update saved end time? (" + self.end + ") [y|n]: ")
                 if update == "y":
                     self.updateEndTime(self.end)
 
