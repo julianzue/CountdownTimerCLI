@@ -202,7 +202,7 @@ class Fahrt():
     def toTime(self, seconds):
         hours = int(seconds / 60 / 60)
         mins = int((seconds - (hours * 60 * 60)) / 60)
-        secs = int(seconds - (mins * 60))
+        secs = int(seconds - ((mins * 60) + (hours * 60 * 60)))
 
         out = "{:02d}".format(hours) + ":" + "{:02d}".format(mins) + ":" + "{:02d}".format(secs)
 
