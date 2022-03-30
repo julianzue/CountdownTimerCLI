@@ -1,5 +1,6 @@
 import time
 import os
+import platform
 
 try:
     from colorama import Fore, init
@@ -64,7 +65,10 @@ class Fahrt():
 
     def loop(self):
 
-        os.system("cls")
+        if platform.system() == "Linux":
+            os.system("clear")
+        else:
+            os.system("cls")
 
         self.start_split = self.start.split(":")
         self.end_split = self.end.split(":")
